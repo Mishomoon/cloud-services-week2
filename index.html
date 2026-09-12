@@ -3,6 +3,50 @@
 
 <head>
   <title>Cloud Services - Weekly Assignment 3</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 30px;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    h3 {
+      margin-top: 25px;
+    }
+
+    p {
+      background-color: white;
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    img {
+      max-width: 100%;
+      border: 1px solid #ccc;
+      padding: 5px;
+      background-color: white;
+    }
+
+    a {
+      color: #333;
+    }
+
+    hr {
+      margin: 30px 0;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -13,9 +57,7 @@
 
   <p>
     This webpage documents my work for Week 3 of the Cloud Services course.
-    In this assignment, I learned about cloud-based services, storage, DNS,
-    and different ways of providing web services. I also worked with CSC
-    Rahti and Allas.
+    In this assignment.
   </p>
 
   <hr>
@@ -24,13 +66,12 @@
 
   <p>
     Many companies use cloud-based email and calendar services because
-    employees can access them from different devices and locations. The
-    company does not need to manage all the email and calendar servers
+    employees can access them from different devices and locations.
+    The company does not need to manage all the email and calendar servers
     by itself because the cloud provider manages much of the infrastructure.
-    Cloud calendars also make it easier to arrange meetings, send invitations
+    Cloud calendars also make it easier to arrange meetings, send invitations,
     and share calendars with other employees.
   </p>
-
 
   <h2>Question 2: What would a mid-size company store in Amazon Glacier? What not? Why?</h2>
 
@@ -42,8 +83,14 @@
     designed for long-term and less frequently accessed data.
   </p>
 
+  <p>
+    Other cloud storage providers can also be used for this purpose,
+    such as Microsoft Azure and Google Cloud. The company can compare
+    storage prices, access times, and features before choosing a suitable
+    service.
+  </p>
 
-  <h2>Question 6: When should a company maintain its own web server and when should it use SaaS, PaaS or IaaS?</h2>
+  <h2>Question 3: When should a company maintain its own web server and when should it use SaaS, PaaS or IaaS?</h2>
 
   <p>
     A company may maintain its own web server when it needs a high level
@@ -67,8 +114,7 @@
     infrastructure itself.
   </p>
 
-
-  <h2>Question 8: Why do many IoT devices use public DNS resolvers?</h2>
+  <h2>Question 4: Why do many IoT devices use public DNS resolvers?</h2>
 
   <p>
     IoT devices such as smart TVs, smart cameras, and other connected
@@ -91,6 +137,12 @@
     run without me managing the underlying physical servers.
   </p>
 
+  <img src="Images/rahti-screenshot.png"
+       alt="Rahti deployment screenshot"
+       width="500">
+
+  
+
   <h3>Allas</h3>
 
   <p>
@@ -99,47 +151,75 @@
     store files such as pictures and other media.
   </p>
 
-  <h3>My Deployment Process</h3>
+   <img src="Images/allas-screenshot.png"
+       alt="Allas storage screenshot"
+       width="500">
 
-  <ol>
-    <li>Created the webpage using HTML.</li>
-    <li>Created and used a Docker container for the webpage.</li>
-    <li>Uploaded the project to GitHub.</li>
-    <li>Deployed the containerized webpage to CSC Rahti.</li>
-    <li>Used Allas for storing media.</li>
-    <li>Created a public webpage through Rahti.</li>
-  </ol>
+  <h3>My Picture</h3>
 
- <h3>My Picture</h3>
-
-<p>
-  This picture is stored in CSC Allas and used as media for my webpage.
-</p>
-
-<img src="download (11).jpg"
-     alt="Cloud Services assignment picture"
-     width="500">
-
-<h2>Screenshots and Documentation</h2>
-
-  <h2>Screenshots and Documentation</h2>
 
   <p>
-    The following screenshots document the different stages of my work,
-    including the project setup, GitHub repository, Rahti deployment,
-    and Allas storage.
+    This picture is stored in my CSC Allas bucket. I used the picture
+    as media for this assignment and included a copy in the web project
+    so that it can be displayed on the public webpage.
   </p>
 
-  <!-- Add your screenshots here -->
+  <!-- Picture -->
+  <img src="week3-picture.jpg"
+       alt="Cloud Services assignment picture"
+       width="200">
 
+  <p>
+    The picture is an example of media stored using CSC Allas.
+    The Allas bucket is used separately from the web application.
+  </p>
+
+  <p>
+    GitHub repository:
+    <a href="https://github.com/Mishomoon/cloud-services-week2">
+      https://github.com/Mishomoon/cloud-services-week2
+    </a>
+  </p>
+
+
+  <hr>
+
+
+  <p>
+    <a href="https://cloud-services-week2-cloud-services.2.rahtiapp.fi">
+      https://cloud-services-week2-cloud-services.2.rahtiapp.fi
+    </a>
+  </p>
+
+  <hr>
+
+<h2>References</h2>
+
+<a href="https://aws.amazon.com/s3/storage-classes/glacier/">https://aws.amazon.com/s3/storage-classes/glacier/</a>
+<br>
+
+<a href="https://developers.cloudflare.com/cache/concepts/default-cache-behavior/">https://developers.cloudflare.com/cache/concepts/default-cache-behavior/</a>
+<br>
+
+<a href="https://www.sciencedirect.com/science/article/pii/S2352864817300731">https://www.sciencedirect.com/science/article/pii/S2352864817300731</a>
+<br>
+
+<a href="https://docs.csc.fi/data/Allas/introduction/">https://docs.csc.fi/data/Allas/introduction/</a>
+<br>
+
+<a href="https://docs.csc.fi/data/Allas/using_allas/allas-ui/">https://docs.csc.fi/data/Allas/using_allas/allas-ui/</a>
+<br>
+
+<a href="https://docs.csc.fi/cloud/rahti/">https://docs.csc.fi/cloud/rahti/</a>
 
   <h2>Conclusion</h2>
 
   <p>
     In Week 3, I learned how different cloud services can be used for
-    storage, web services, and Internet communication. I also practiced
-    using Rahti to deploy a webpage and Allas to store media separately
-    from the application.
+    storage, web services, and Internet communication. I learned about
+    cloud email and calendars, long-term cloud storage, different cloud
+    service models, and DNS. I also practiced using CSC Rahti to deploy
+    a webpage and CSC Allas to store media separately from the application.
   </p>
 
 </body>
