@@ -1,32 +1,147 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Cloud Services - Weekly Assignment 2</title>
+  <title>Cloud Services - Weekly Assignment 3</title>
 </head>
+
 <body>
-  <h1>Cloud Services Assignment - Week 2</h1>
 
-  <h2>Explain what is serverless architecture?</h2>
-  <p>Serverless architecture is a cloud computing model where the cloud provider manages the servers and infrastructure for you. The developer can focus on the application or functions instead of managing the servers.</p>
+  <h1>Cloud Services - Weekly Assignment 3</h1>
 
-  <h2>When is it more feasible to use application containers (app virtualization) than full OS virtualization to provide networked services?</h2>
-  <p>Containers are better when you want to run applications with fewer resources. They are lighter and faster than virtual machines.</p>
-
-  <h2>Compare application containers to microservices.</h2>
-  <p>Containers are used to package and run applications. Microservices are a way to divide an application into smaller services.</p>
-
-  <h2>Describe shortly what is Kubernetes and what alternatives are there?</h2>
-  <p>Kubernetes is a container orchestration system that manages containers. One alternative is Docker Swarm.</p>
-
-  <h2>Deploy a Containerized Web App on CSC Rahti</h2>
-  <p>I created a simple web page using HTML and a Dockerfile. I uploaded the files to GitHub and deployed the application on CSC Rahti. The container was built successfully and the application was published with a public HTTPS URL.</p>
+  <h2>Introduction</h2>
 
   <p>
-    Public URL:
-    <a href="https://cloud-services-week2-cloud-services.2.rahtiapp.fi">
-      https://cloud-services-week2-cloud-services.2.rahtiapp.fi
-    </a>
+    This webpage documents my work for Week 3 of the Cloud Services course.
+    In this assignment, I learned about cloud-based services, storage, DNS,
+    and different ways of providing web services. I also worked with CSC
+    Rahti and Allas.
+  </p>
+
+  <hr>
+
+  <h2>Question 1: Why are so many companies using cloud-based email and calendar services?</h2>
+
+  <p>
+    Many companies use cloud-based email and calendar services because
+    employees can access them from different devices and locations. The
+    company does not need to manage all the email and calendar servers
+    by itself because the cloud provider manages much of the infrastructure.
+    Cloud calendars also make it easier to arrange meetings, send invitations
+    and share calendars with other employees.
+  </p>
+
+
+  <h2>Question 2: What would a mid-size company store in Amazon Glacier? What not? Why?</h2>
+
+  <p>
+    A mid-size company could use Amazon Glacier for long-term backups,
+    archived documents, and other data that needs to be kept for a long
+    time but is not accessed often. Glacier would not be the best choice
+    for files that employees need to access frequently because it is
+    designed for long-term and less frequently accessed data.
+  </p>
+
+
+  <h2>Question 6: When should a company maintain its own web server and when should it use SaaS, PaaS or IaaS?</h2>
+
+  <p>
+    A company may maintain its own web server when it needs a high level
+    of control and has the skills and resources to manage the server.
+    However, managing your own server also means taking care of hardware,
+    software, updates, security, and maintenance.
+  </p>
+
+  <p>
+    IaaS can be useful when a company wants more control but does not want
+    to manage physical hardware. The cloud provider provides infrastructure
+    such as virtual machines, while the company manages the operating
+    system and software.
+  </p>
+
+  <p>
+    PaaS can be useful when the company wants to focus mainly on its
+    application while the cloud provider manages more of the underlying
+    infrastructure. SaaS is useful when the company wants to use a
+    finished software service instead of managing the application and
+    infrastructure itself.
+  </p>
+
+
+  <h2>Question 8: Why do many IoT devices use public DNS resolvers?</h2>
+
+  <p>
+    IoT devices such as smart TVs, smart cameras, and other connected
+    home devices need to communicate with services on the Internet.
+    DNS helps these devices find Internet services using domain names.
+    Public DNS resolvers can provide a DNS service that is available
+    from different networks, which can be useful for Internet-connected
+    devices.
+  </p>
+
+  <hr>
+
+  <h2>Practical Work: CSC Rahti and Allas</h2>
+
+  <h3>Rahti</h3>
+
+  <p>
+    I used CSC Rahti to deploy my webpage as a containerized web
+    application. Rahti provides a platform where the application can
+    run without me managing the underlying physical servers.
+  </p>
+
+  <h3>Allas</h3>
+
+  <p>
+    I used CSC Allas as cloud storage for media used by the webpage.
+    Allas provides S3-compatible object storage, which can be used to
+    store files such as pictures and other media.
+  </p>
+
+  <h3>My Deployment Process</h3>
+
+  <ol>
+    <li>Created the webpage using HTML.</li>
+    <li>Created and used a Docker container for the webpage.</li>
+    <li>Uploaded the project to GitHub.</li>
+    <li>Deployed the containerized webpage to CSC Rahti.</li>
+    <li>Used Allas for storing media.</li>
+    <li>Created a public webpage through Rahti.</li>
+  </ol>
+
+ <h3>My Picture</h3>
+
+<p>
+  This picture is stored in CSC Allas and used as media for my webpage.
+</p>
+
+<img src="download (11).jpg"
+     alt="Cloud Services assignment picture"
+     width="500">
+
+<h2>Screenshots and Documentation</h2>
+
+  <h2>Screenshots and Documentation</h2>
+
+  <p>
+    The following screenshots document the different stages of my work,
+    including the project setup, GitHub repository, Rahti deployment,
+    and Allas storage.
+  </p>
+
+  <!-- Add your screenshots here -->
+
+
+  <h2>Conclusion</h2>
+
+  <p>
+    In Week 3, I learned how different cloud services can be used for
+    storage, web services, and Internet communication. I also practiced
+    using Rahti to deploy a webpage and Allas to store media separately
+    from the application.
   </p>
 
 </body>
+
 </html>
